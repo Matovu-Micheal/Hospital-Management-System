@@ -261,7 +261,7 @@ if(isset($_POST['submit']))
           
         
           
-          <div style="width:90%;" class="row">
+          <div style="width:80%;" class="row ms-3">
             <div class="col-md-12 grid-margin">
               <div class="d-flex justify-content-between flex-wrap">
                 <div class="p-2 align-items-end flex-wrap">
@@ -282,7 +282,7 @@ if(isset($_POST['submit']))
             </div>
           </div>
 
-          <div style="width:90%;" class="row">
+          <div style="width:80%;" class="row ms-3">
             
             <!-- MY FORM -->
             <div class="col-12 grid-margin stretch-card">
@@ -299,9 +299,11 @@ if(isset($_POST['submit']))
 
                 <div style="margin-left:2em" class="diagnosis_form mt-2 mb-5" >
                 <!-- <div class=""  onclick="toggle('diagnosis_form');"> -->
-                
-                <h4 class="mb-2">Patient'S Diagnosis</h4>
-                
+                <div class='d-flex'>
+                  <div><img style='width:70%;'  src="../../images/icons8-medical-form2.png" alt="logo"></div>
+                  <div><h4 class="pt-3">Patient's Diagnosis</h4></div>
+                </div>
+                <hr>
                   <form id="diagnosis_form" method="POST"  class="forms-sample">
                   
                   <p class=""><?php echo  empty($info) ? '' : $info;  ?></p>
